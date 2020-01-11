@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:example1/home.dart';
-import 'package:example1/reward.dart';
+import 'home.dart';
+import 'reward.dart';
 class Screen2 extends StatefulWidget {
   @override
   _Screen2State createState() => _Screen2State();
@@ -29,7 +29,7 @@ class _Screen2State extends State<Screen2> {
           RaisedButton(
             child: Text("Go Back!!"),
             onPressed: (){
-              Navigator.pop(context,Home());
+              Navigator.pop(context);
             },
           ),
           Row(

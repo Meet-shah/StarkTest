@@ -1,6 +1,8 @@
-import 'package:example1/home.dart';
-import 'package:example1/reward.dart';
+
 import 'package:flutter/material.dart';
+
+import 'home.dart';
+import 'reward.dart';
 
 class Screen1 extends StatefulWidget {
   //  int coins;
@@ -14,7 +16,7 @@ class _Screen1State extends State<Screen1> {
 // _Screen1State({this.coins});
   // Reward _reward = Reward(reward: 100);
   // int coins = _reward.getReward();
-  Reward user = Reward();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,7 +39,7 @@ class _Screen1State extends State<Screen1> {
           RaisedButton(
             child: Text("Go Back!!"),
             onPressed: (){
-              Navigator.pop(context,Home());
+              Navigator.pop(context);
             },
           ),
           Row(
